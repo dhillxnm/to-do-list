@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Manpreet Kaur">
+    <meta name="description" content="To-Do List">
+    <meta name="keywords" content="html, css, web, web development, javascript">
+    <title>To-Do List</title>
+    <link rel="icon" href="./assets/media/favicon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+    <link rel="stylesheet" href="./assets/style/index.css"media="all">
+    <script src="./assets/script/app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <img src="./assets/image/icon.png" alt="image"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <nav>
+                <ul id="list-container">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+  </body>
+</html>
