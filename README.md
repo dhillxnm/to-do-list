@@ -54,3 +54,8 @@ CSS
 }
 
 ```
+
+### Demo
+
+Click [here] (https://dhillxnm.github.io/to-do-list/)
+to test the application

@@ -15,29 +15,28 @@
 
 
 .container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4C5153, #0F3342);
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    background: #000;
-    padding: 10px;
 }
 
 /* to-do app */
 
 .todo-app {
     width: 100%;
-    max-width: 540px;
-    background: var(--color);
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+    max-width: 400px;
+    background: rgb(15 51 66/0.5);
+    padding: 40px 30px 40px;
     border-radius: 10px;
 }
 
 
 .todo-app h2 {
-    color: #002765;
+    color: var(--color);
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -55,9 +54,11 @@
     align-items: center;
     justify-content: space-between;
     background: #edeef0;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
+    border-radius: 7px;
+    padding-left: 2px;
+    margin-bottom: 12px;
+    width: 250px;
+    position: relative;
 }
 
 
@@ -72,20 +73,23 @@ input {
 
 
 button {
-   border: none;
-   outline: none;
-   padding: 16px 50px;
-   background: #ff5945;
-   color: var(--color);;
-   font-size: 16px;
-   cursor: pointer;
-   border-radius: 40px;
+    position: absolute;
+    left: 255px;
+    border: none;
+    outline: none;
+    padding: 9px 27px;
+    background: #ff5945;
+    color: var(--color);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 /* tasks lists*/
 
 nav ul li {
    list-style: none;
+   color: #fff;
    font-size: 17px;
    padding: 12px 8px 12px 50px;
    user-select: none;
@@ -137,3 +141,40 @@ ul li span:hover{
     background: #edeef0;
 }
 
+
+/* MOBILE view */
+@media (min-width: 270px) and (max-width: 450px) {
+    body {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .todo-app {
+    padding: 40px 20px 40px 50px ;
+    }
+
+    .row {
+        position: relative;
+        width: 90%;
+    }
+
+    input {
+        width: 60%;
+    }
+
+    input[type] {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    button {
+        position: static !important;
+        margin-right: 3px;
+        padding: 5px 20px;
+    }
+}
+
+/* TABLET view */
+@media (min-width: 600px)  {
+    
+}
