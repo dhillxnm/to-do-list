@@ -24,7 +24,9 @@
     justify-content: center;
 }
 
+
 /* to-do app */
+
 
 .todo-app {
     width: 100%;
@@ -85,6 +87,7 @@ button {
     border-radius: 5px;
 }
 
+
 /* tasks lists*/
 
 nav ul li {
@@ -142,7 +145,10 @@ ul li span:hover{
 }
 
 
+/* Media queries */
 /* MOBILE view */
+
+
 @media (min-width: 270px) and (max-width: 450px) {
     body {
         height: 100vh;
